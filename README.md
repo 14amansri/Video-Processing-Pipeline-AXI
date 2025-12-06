@@ -44,6 +44,7 @@ The OV2640 will not output the correct format automatically. You must run a C pr
 <li>Resolution: Load the specific register struct for <b>VGA (640x480)</b>.</li>
 <li>Pixel Format: Load the register struct for <b>RGB565</b>.</li>
 <li>Test: Check the Product ID registers (<code>0x0A</code>, <code>0x0B</code>) to verify communication.</li>
+ 
  <i> Note: Without this step, the pipeline will likely receive YUV or Bayer Raw data, resulting in corrupted visual output.
 </i>
 
